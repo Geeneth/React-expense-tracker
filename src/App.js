@@ -29,7 +29,7 @@ function App() {
   ];
 
   const addExpenseHandler = (expense) => {
-    
+    console.log(expense);
   }
 
   //actual thing
@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <h2>New React Application</h2>
       <p> This is also visible </p>
-      <NewExpense/>
+      <NewExpense onAddExpence={addExpenseHandler}/>
       <ExpenseItem title = {expenses[0].title} date = {expenses[0].date}></ExpenseItem>
       <ExpenseItem title = {expenses[1].title} date = {expenses[1].date}></ExpenseItem>
       <ExpenseItem title = {expenses[2].title} date = {expenses[2].date}></ExpenseItem>
